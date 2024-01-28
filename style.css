@@ -8,11 +8,49 @@ body {
     right: 20px;
     top: 20px;
     width: 100%;
-    text-align: right;
+    display: flex;
+    justify-content: space-evenly
 }
 
+h1 {
+    font-family: "Gloria Hallelujah";
+    /* box-shadow: 1px 1px grey; */
+}
+
+
+
 #home {
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    font-weight: 30px;
+    font-family: "Poor Story";
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #605f83;
+}
+
+
+
+
+#home:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+}
+
+#home:hover::before, #home:hover::after{
+    /* display: block; */
+    content: '';
+    /* position: absolute; */
+    width: 100px;
+    height: 100px;
+    background: #FDA8CF;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+#home:hover::after{
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
 }
 
 #footer {
@@ -23,14 +61,18 @@ body {
     text-align: right;
 }
 
-#home {
-    margin-right: 10px;
-}
+
 
 #info {
     letter-spacing: 2px;
     color: #ccc;
     margin: 180px 0 0 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 300px; */
 }
 
 #top_container {
@@ -39,16 +81,21 @@ body {
 }
 
 .message {
-    padding: 30px 30px 30px 50px;
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
-    font-size: 28px;
-    color: #333;
-    width: 700px;
+    /* padding: 30px 30px 30px 50px;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	font-size: 50px;
+	color: #333;
+	width: 680px; */
 }
 
-p{
-    font-size: x-large;
+#top {
+    padding: 30px 30px 30px 50px;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 30px;
+    color: #333;
+    width: 680px;
 }
+
 #bottom_container {
     position: absolute;
     top: 2500px;
@@ -56,28 +103,32 @@ p{
     width: 100%
 }
 
-#top{
-    letter-spacing: 3px;
-}
-
 #bottom {
-margin-left: 10px;
-letter-spacing: 2px;
+    padding: 30px 30px 30px 50px;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 30px;
+    color: #333;
+    width: 680px;
 }
 
 #attribute {
-    text-align: right;
+    /* text-align: right; */
     width: 680px;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #605f83;
+img {
+    width: 150px;
+    height: 150px;
 }
 
-a:hover {
-    color: #5f8360;
+#logo {
+    height: 50px;
+    width: 70px;
+    border-radius: 30%;
+    margin-left: 15px;
 }
+
+
